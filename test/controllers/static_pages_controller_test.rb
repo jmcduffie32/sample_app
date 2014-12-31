@@ -27,5 +27,6 @@ class StaticPagesControllerTest < ActionController::TestCase
     get :contact
     assert_response :success
     assert_select "title", "Contact#{@title}"
+  end
 
 end
