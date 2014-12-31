@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
-  def index
-    render text: "hello world"
-  end
+  root 'static_pages#home'
+  get 'static_pages/help'
+  get 'static_pages/about'
 end
